@@ -1,3 +1,18 @@
+require "sinatra"
+
+configure :development do
+  require "sinatra/reloader"
+end
+
+get("/") do
+  "
+  <h1>Rock Paper Scissors Game</h1>
+  <a href='/rock'><button>Play Rock</button></a>
+  <a href='/paper'><button>Play Paper</button></a>
+  <a href='/scissors'><button>Play Scissors</button></a>
+  "
+end
+
 get("/rock") do
   user_move = "rock"
   computer_move = ["rock", "paper", "scissors"].sample
@@ -12,3 +27,10 @@ get("/rock") do
   else
     result += "<p>You lose!</p>"
   end
+
+  result
+end
+
+get("/paper") do
+  user_move_
+
