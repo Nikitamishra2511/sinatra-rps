@@ -29,7 +29,6 @@ get("/rock") do
 
   result
 end
-
 get("/paper") do
   user_move = "paper"
   computer_move = ["rock", "paper", "scissors"].sample
