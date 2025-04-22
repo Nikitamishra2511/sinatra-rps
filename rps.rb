@@ -18,7 +18,7 @@ get("/rock") do
   computer_move = ["rock", "paper", "scissors"].sample
 
   result = "<h2>You played #{user_move.capitalize}</h2>"
-  result += "<h2>Computer played #{computer_move.capitalize}</h2>"
+  result += "<h2>They played #{computer_move.capitalize}</h2>"
 
   if computer_move == user_move
     result += "<p>It's a tie!</p>"
@@ -36,7 +36,7 @@ get("/paper") do
   computer_move = ["rock", "paper", "scissors"].sample
 
   result = "<h2>You played #{user_move.capitalize}</h2>"
-  result += "<h2>Computer played #{computer_move.capitalize}</h2>"
+  result += "<h2>They played #{computer_move.capitalize}</h2>"
 
   if computer_move == user_move
     result += "<p>It's a tie!</p>"
@@ -54,7 +54,7 @@ get("/scissors") do
   computer_move = ["rock", "paper", "scissors"].sample
 
   result = "<h2>You played #{user_move.capitalize}</h2>"
-  result += "<h2>Computer played #{computer_move.capitalize}</h2>"
+  result += "<h2>They played #{computer_move.capitalize}</h2>"
 
   if computer_move == user_move
     result += "<p>It's a tie!</p>"
