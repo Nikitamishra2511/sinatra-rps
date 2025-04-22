@@ -6,10 +6,10 @@ end
 
 get("/") do
   "
+  <h1>Rock Paper Scissors Game</h1>
   <a href='/rock'><button>Play Rock</button></a><br><br>
   <a href='/paper'><button>Play Paper</button></a><br><br>
   <a href='/scissors'><button>Play Scissors</button></a>
-   <h1>Rock Paper Scissors Game</h1>
   "
 end
 
@@ -28,6 +28,7 @@ get("/rock") do
     result += "<p>You lose!</p>"
   end
 
+  result += '<br><br><a href="https://rps.matchthetarget.com/">Rules</a>'
   result
 end
 
@@ -46,6 +47,7 @@ get("/paper") do
     result += "<p>You lose!</p>"
   end
 
+  result += '<br><br><a href="https://rps.matchthetarget.com/">Rules</a>'
   result
 end
 
@@ -63,6 +65,7 @@ get("/scissors") do
   else
     result += "<p>You lose!</p>"
   end
-x += '<br><br><a href="https://rps.matchthetarget.com/">Rules</a>'
-x
+
+  result += '<br><br><a href="https://rps.matchthetarget.com/">Rules</a>'
+  result
 end
