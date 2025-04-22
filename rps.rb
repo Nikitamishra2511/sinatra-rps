@@ -12,7 +12,6 @@ get("/") do
   <h1>Rock Paper Scissors Game</h1>
   "
 end
-
 get("/rock") do
   user_move = "rock"
   computer_move = ["rock", "paper", "scissors"].sample
