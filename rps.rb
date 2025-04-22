@@ -7,8 +7,8 @@ end
 get("/") do
   "
   <h1>Rock Paper Scissors Game</h1>
-  <a href='/rock'><button>Play Rock</button></a>
-  <a href='/paper'><button>Play Paper</button></a>
+  <a href='/rock'><button>Play Rock</button></a><br><br>
+  <a href='/paper'><button>Play Paper</button></a><br><br>
   <a href='/scissors'><button>Play Scissors</button></a>
   "
 end
@@ -66,4 +66,3 @@ get("/scissors") do
 
   result
 end
-
