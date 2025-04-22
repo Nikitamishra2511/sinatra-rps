@@ -26,7 +26,6 @@ get("/rock") do
   else
     result += "<p>You lose!</p>"
   end
-
   result
 end
 get("/paper") do
