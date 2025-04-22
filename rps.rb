@@ -28,7 +28,6 @@ get("/rock") do
     result += "<p>You lose!</p>"
   end
 
-  result += '<br><br><a href="https://rps.matchthetarget.com/">Rules</a>'
   result
 end
 
@@ -47,7 +46,6 @@ get("/paper") do
     result += "<p>You lose!</p>"
   end
 
-  result += '<br><br><a href="https://rps.matchthetarget.com/">Rules</a>'
   result
 end
 
@@ -66,6 +64,7 @@ get("/scissors") do
     result += "<p>You lose!</p>"
   end
 
-  result += '<br><br><a href="https://rps.matchthetarget.com/">Rules</a>'
   result
 end
+
+
