@@ -63,6 +63,6 @@ get("/scissors") do
   else
     result += "<p>You lose!</p>"
   end
-
+<a href="https://rps.matchthetarget.com/">Rules</a>
   result
 end
