@@ -3,14 +3,8 @@ require "sinatra"
 configure :development do
   require "sinatra/reloader"
 end
-
 get("/") do
-  "
-  <a href='/rock'><button>Play Rock</button></a><br><br>
-  <a href='/paper'><button>Play Paper</button></a><br><br>
-  <a href='/scissors'><button>Play Scissors</button></a>
-  <h1>Rock Paper Scissors Game</h1>
-  "
+  erb :monkey
 end
 get("/rock") do
   user_move = "rock"
